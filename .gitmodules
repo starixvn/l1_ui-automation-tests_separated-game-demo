@@ -1,0 +1,4 @@
+[submodule "sc-automation-core"]
+  path = sc-automation-core
+  url = ../packages/sc-automation-core.git
+ 
