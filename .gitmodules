@@ -1,4 +1,5 @@
 [submodule "sc-automation-core"]
   path = sc-automation-core
-  url = ../packages/sc-automation-core.git
+  url = ../../packages/sc-automation-core.git
+  branch = dev
  
