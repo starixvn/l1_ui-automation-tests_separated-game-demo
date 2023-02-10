@@ -1,4 +1,4 @@
-export default {
+export const accounts = {
     local: "21031988",
     local1: "222222",
     local2: "222222",

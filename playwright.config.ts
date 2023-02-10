@@ -1,6 +1,6 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 import { devices } from "@playwright/test";
-import * as Accounts from "./tests/accounts.ts";
+import { accounts } from "./tests/accounts.ts";
 // import * as customExpect from "sc-automation-core/lib/expect";
 
 /**
@@ -15,7 +15,7 @@ import * as Accounts from "./tests/accounts.ts";
 const gameId = process.env.npm_config_game ?? "2";
 const env = process.env.npm_config_env ?? "local";
 process.env.ProductId = "1613";
-process.env.TestAccount = Accounts[env];
+process.env.TestAccount = accounts[env];
 
 const config: PlaywrightTestConfig = {
     testDir: "./tests",
