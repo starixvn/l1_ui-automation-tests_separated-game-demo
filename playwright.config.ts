@@ -1,6 +1,6 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 import { devices } from "@playwright/test";
-import * as Accounts from "./tests/accounts";
+import * as Accounts from "./tests/accounts.ts";
 // import * as customExpect from "sc-automation-core/lib/expect";
 
 /**
@@ -12,7 +12,7 @@ import * as Accounts from "./tests/accounts";
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-const gameId = process.env.npm_config_game ?? "9";
+const gameId = process.env.npm_config_game ?? "2";
 const env = process.env.npm_config_env ?? "local";
 process.env.ProductId = "1613";
 process.env.TestAccount = Accounts[env];

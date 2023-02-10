@@ -1,18 +1,19 @@
-import { SedieLocators } from "./locators/sedie-locators";
-import { SedieConfigs } from "./sedie-configs";
-import { TableGameBase, IBaseOptions } from "sc-automation-core/src/smoke-bases";
+import { SmokeBases } from "sc-automation-core";
 
-class SedieSmokeSpec extends TableGameBase {
+import { SedieLocators } from "./locators/sedie-locators.ts";
+import { SedieConfigs } from "./sedie-configs.ts";
+
+class SedieSmokeSpec extends SmokeBases.TableGameBase {
     /**
      *
      */
     constructor() {
-        const smokeOptions: IBaseOptions = {
+        const smokeOptions: SmokeBases.IBaseOptions.IBaseOptions = {
             gameConfiguration: SedieConfigs,
             locators: SedieLocators,
             waitBetTimeout: 8000,
             placeBetChoices: [SedieConfigs.choices[0]],
-            snapshotFolderPath: __filename,
+            snapshotFolderPath: "smoke",
         };
 
         super(smokeOptions);

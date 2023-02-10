@@ -1,5 +1,6 @@
-import { GameConfiguration } from "sc-automation-core/src/components";
-export const SedieConfigs: GameConfiguration = {
+import { Components } from "sc-automation-core";
+
+export const SedieConfigs: Components.GameConfiguration = {
     id: 2,
     name: "SeDie",
     durations: {
