@@ -7,3 +7,5 @@ export const accounts = {
     uat: "IT56Test789",
     prod: "supertestte120201003",
 };
+
+export const productId = "1613";

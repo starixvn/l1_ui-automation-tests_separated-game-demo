@@ -1,6 +1,6 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 import { devices } from "@playwright/test";
-import { accounts } from "./tests/accounts.ts";
+import { accounts, productId } from "./tests/test-configs.ts";
 
 /**
  * Read environment variables from file.
@@ -11,9 +11,8 @@ import { accounts } from "./tests/accounts.ts";
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-const gameId = process.env.npm_config_game ?? "2";
 const env = process.env.npm_config_env ?? "local";
-process.env.ProductId = "1613";
+process.env.ProductId = productId;
 process.env.TestAccount = accounts[env];
 
 const config: PlaywrightTestConfig = {
