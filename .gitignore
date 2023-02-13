@@ -5,9 +5,13 @@
 
 **/coverage
 **/reports
+**/playwright-report
+**/screenshots
+**/test-results
 
 lib/
 .vscode
 *.cts
 *.map
 
+/playwright-report/index.html

@@ -1,7 +1,6 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 import { devices } from "@playwright/test";
 import { accounts } from "./tests/accounts.ts";
-// import * as customExpect from "sc-automation-core/lib/expect";
 
 /**
  * Read environment variables from file.
