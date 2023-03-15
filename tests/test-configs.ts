@@ -1,11 +1,11 @@
 export const accounts = {
-    local: "21031988",
-    local1: "222222",
-    local2: "222222",
-    local3: "222222",
-    sit: "supertestsaba67",
-    uat: "IT56Test789",
+    local: "222268",
+    local1: "222268",
+    local2: "222268",
+    local3: "222268",
+    sit: "supertestsaba68",
+    uat: "IT57Test789",
     prod: "supertestte120201003",
 };
 
-export const productId = "1613";
+export const productId = "1670";
